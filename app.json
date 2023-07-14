@@ -2,7 +2,7 @@
   "expo": {
     "name": "new-expo-project",
     "slug": "new-expo-project",
-    "scheme": "testNewExpo",
+    "scheme": "test-new-expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
