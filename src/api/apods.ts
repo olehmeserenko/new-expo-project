@@ -14,3 +14,13 @@ export const fetchApods = async (): Promise<Apod[]> => {
     return [];
   }
 };
+
+export const fetchApod = async (date: string | string[]): Promise<Apod> => {
+  try {
+    const res = await fetch(`${BASE_URL}&date=${date}`);
+    return await res.json();
+  } catch (e) {
+    console.log("Error fetching apod: ", e.message);
+    return null;
+  }
+};
